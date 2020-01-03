@@ -1,0 +1,220 @@
+<div class="container-fluid slider-bg">
+    <div class="left-animated-icon">
+        <img src="../../assets/images/home/left-cube.png" class="">
+    </div>
+    <div class="left-new-anim">
+        <img src="../../assets/images/home/top-trangle.png" class="trangle-one">
+        <img src="../../assets/images/home/right-cube.png" class="trangle-three-left">
+    </div>
+    <div class="right-animated-icon">
+        <img src="../../assets/images/home/top-trangle.png" class="trangle-one">
+        <img src="../../assets/images/home/large-trangle.png" class="trangle-two">
+        <img src="../../assets/images/home/right-cube.png" class="trangle-three">
+    </div>
+    <div class="header-bottom">
+        <div class="left-header-bg">
+            <img src="../../assets/images/home/left.png">
+        </div>
+        <div class="right-header-bg">
+            <img src="../../assets/images/home/right.png">
+        </div>
+    </div>
+</div>
+
+<div class="slider_txt p-top">
+
+    <div class="slider_txt_center">
+        <!-- <img class="img-responsive" src="../../assets/images/home_uppere.png"> -->
+        <h1 class="white-color">{{ 'HOME.SLIDER_TITTLE_UP' | translate }}</h1>
+
+        <h1 class="bold-font yellow-text  aos-animate" data-aos="zoom-in-up">{{ 'HOME.SLIDER_TITTLE_BOTTOM' | translate }}</h1>
+
+    </div>
+
+    <!-- <div class="service-slider marquee">
+        <div class="mover-1">
+            <a href="" class="service-box" *ngFor="let obj of homeServiceBox">
+                <div class="service-box-img">
+                    <img [src]="imageBasePath+obj.serviceImages" class="img-responsive">
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div> -->
+</div>
+
+
+<section class="who_are home-section">
+    <div class="container">
+        <div class="row box-align-center">
+            <div class="col-lg-7 col-sm-7 col-md-7">
+                <h2>{{ 'HOME.WHO_WE_ARE' | translate }}</h2>
+                <h4>{{ 'HOME.WHO_WE_ARE_SUB_HEADING_ONE' | translate }}<br>{{ 'HOME.WHO_WE_ARE_SUB_HEADING_TWO' | translate }}</h4>
+                <p>{{ 'HOME.WHO_WE_ARE_DESCRIPTION_TEXT' | translate }}</p>
+            </div>
+            <div class="col-lg-5 col-sm-5 col-md-5">
+                <div class="hover15 column">
+                    <figure> <img src="../../assets/images/service.png"></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="counter_st">
+    <div class="container">
+        <div class="row">
+            <div class="right-animated-icon">
+                <img src="../../assets/images/home/top-trangle.png" class="trangle-one">
+                <img src="../../assets/images/home/large-trangle.png" class="trangle-two">
+                <img src="../../assets/images/home/right-cube.png" class="trangle-three">
+            </div>
+            <div class="wrapper container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-3 col-md-3  aos-animate" data-aos="flip-left">
+                        <div class="counter_style"> <img src="../../assets/images/project_comp.png">
+                            <h4 class="timer count-title count-number" data-to="50" data-speed="2000">50</h4>
+                            <p class="count-text ">{{ 'HOME.PROJECT_COMPLETED' | translate }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-md-3  aos-animate" data-aos="flip-left">
+                        <div class="counter_style "> <img src="../../assets/images/year_exp.png">
+                            <h4 class="timer count-title count-number" data-to="13" data-speed="2000">13</h4>
+                            <p class="count-text ">{{ 'HOME.YEARS_EXPERIENCE' | translate }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-md-3  aos-animate" data-aos="flip-left">
+                        <div class="counter_style "> <img src="../../assets/images/team_member.png">
+                            <h4 class="timer count-title count-number" data-to="40" data-speed="2000">40</h4>
+                            <p class="count-text ">{{ 'HOME.TEAM_MEMBERS' | translate }}s</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-3 col-md-3  aos-animate" data-aos="flip-left">
+                        <div class="counter_style "> <img src="../../assets/images/active_client.png">
+                            <h4 class="timer count-title count-number" data-to="140" data-speed="2000">140</h4>
+                            <p class="count-text ">{{ 'HOME.ACTIVE_CLIENTS' | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="our_services">
+    <div class="container">
+        <h2 [ngClass]="{'cl1':title==1,cl2:title==2}">{{ 'HOME.OUR_SERVICES' | translate }}</h2>
+        <h4 data-aos="fade-right" data-aos-delay="100" class="">{{ 'HOME.OUR_SERVICES_HEADING' | translate }}</h4>
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-4 col-md-4 " *ngFor="let obj of servicesList">
+                <a href="../en/domain-registration">
+                    <button class="btn-1">
+                        <span>
+                            <img [src]="imageBasePath+obj.image">
+                            <p> {{obj['title_'+serviceTitleKey]}}  </p>
+                        </span>
+                    </button>
+
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recent_work client-review-bg">
+    <div class="portfolio-girl" data-aos="fade-right" data-aos-delay="1500">
+        <img src="../../assets/images/portfolio_girl.png" class="img-responsive port-1">
+        <img src="../../assets/images/hand.png" id="loading" class="img-responsive">
+    </div>
+
+    <div class="bg-pattern">
+        <img src="../../assets/images/bg_pattern.png">
+    </div>
+    <div class="dots-bg">
+        <img src="../../assets/images/dits.png">
+    </div>
+    <div class="header-bottom">
+        <div class="left-header-bg">
+            <img src="../../assets/images/home/left.png">
+        </div>
+        <div class="right-header-bg">
+            <img src="../../assets/images/home/right.png">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="portfolio-heading">
+            <h1 class="heading-one yellow-text"> آخر أعمالنا</h1>
+
+            <h1 class="sub-heading" data-aos="fade-left" data-aos-delay="100">ما فعلناه حتى الآن</h1>
+
+        </div>
+
+        <div class="portfolio-list-slider">
+            <div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="portfolio-list-slider-box carousel-item " *ngFor="let obj of portfolioList; let i = index" [ngClass]="{'active':i==0}">
+
+                        <!--First slide-->
+
+                        <div class="row box-align-center">
+                            <div class="col-md-6">
+                                <img [src]="imageBasePath+obj.image" class="img-responsive">
+                            </div>
+                            <div class="col-md-6 portfolio-content">
+                                <h1>{{obj.title}}</h1>
+                                <p>{{obj.description}}</p>
+                                <div class="download-btn">
+                                    <a [routerLink]="obj.link" class="app-icon">
+                                        <i class="fa fa-play space" aria-hidden="true"></i>
+
+                                    </a>
+                                    <a [routerLink]="obj.link" class="app-icon">
+                                        <i class="fa fa-apple space"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/First slide-->
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true">  <i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"> <i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="our_clients">
+    <div class="container">
+        <h2>{{ 'HOME.OUR_CLIENTS' | translate }}</h2>
+        <h4>{{ 'HOME.OUR_CLIENTS_SUB_HEADING' | translate }}</h4>
+        <div class="clients_logo">
+            <ul>
+                <li *ngFor="let obj of recentClient"><img [src]="imageBasePath + obj.clientLogo"></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="our-clients">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="client-logo-wrapper">
+                <img src="../../assets/images/client-logo.jpg" class="img-responsive">
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,84 @@
+footer {
+    background: linear-gradient(to right, #42228F, #961095 70%);
+    background-size: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 50px 0px 80px 0px;
+}
+
+footer h5 {
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+footer li {
+    margin: 0px;
+    padding: 0px 0px 25px 0px;
+    line-height: 24px;
+}
+
+footer li a {
+    color: #e5e5e5;
+    font-size: 17px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+}
+
+.android {
+    padding: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    min-width: 135px;
+    width: auto;
+    background: #fff;
+    display: inline-block;
+    text-align: center;
+    color: #42228f !important;
+    font-weight: 600;
+}
+
+.get-app-bottom-avatar {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
+
+.social-icons-container li {
+    display: inline-block;
+}
+
+.social-icons-container li a {
+    line-height: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.copy_ryt {
+    width: auto;
+    color: #e5e5e5;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+}
+
+.copy_ryt a {
+    color: #e5e5e5;
+}

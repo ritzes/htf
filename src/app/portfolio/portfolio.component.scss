@@ -1,0 +1,162 @@
+.imasdar {
+    background: #853083;
+}
+
+.ahli_store {
+    background: #D0AE57;
+}
+
+.alwasta {
+    background: #18194F;
+}
+
+.dlil {
+    background: #F3435A;
+}
+
+.evi_ride {
+    background: #292021;
+}
+
+.truck_app {
+    background: #004495;
+}
+
+.learn_chinease {
+    background: #ED324D;
+}
+
+.kilowat {
+    background: #295BA4;
+}
+
+.logistiom {
+    background: #462580;
+}
+
+.tamweelk {
+    background: #342F72;
+}
+
+.medicolase {
+    background: #8E1830;
+}
+
+section>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.portfolio-list-slider h1 {
+    color: #fff;
+    font-family: 'knock-out-regular';
+    font-size: 3rem;
+}
+
+.portfolio-list-slider p {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.download-btn {
+    margin-top: 50px;
+}
+
+.view-slider-design {
+    margin-top: 168px;
+    display: block;
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.app-icon {
+    width: 67px;
+    height: 67px;
+    float: left;
+    border: 1px solid #fff;
+    margin: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 78px;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+.app-icon .fa {
+    font-size: 30px;
+}
+
+.download-btn .fab.fa-google-play.space {
+    font-size: 27px;
+}
+
+.portfolio-list-slider img {
+    border-style: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.box-align-center {
+    align-items: center;
+}
+
+.portfolio-slides .portfolio-list-slider {
+    margin-top: 0;
+    height: 100vh;
+}
+
+.portfolio-slides .portfolio-list-slider {
+    margin-top: 0;
+    padding-right: 100px;
+    padding-top: 80px !important;
+}
+
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.15s ease;
+    height: 60px;
+    top: 50%;
+    border: 1px solid #fff;
+}

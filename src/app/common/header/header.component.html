@@ -1,0 +1,59 @@
+<header class="top_header">
+    <div class="container">
+
+        <nav class="navbar navbar-dark  navbar-expand-sm fixed-top top_header">
+            <div class="container">
+                <a class="navbar-brand" routerLink="/">
+                    <img src="https://www.htf.sa/images/logo.png" alt="htf-logo">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-list-2">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" routerLink="/about"> {{ 'NAV.NAV_ABOUT' | translate }}<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown parent-menu">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           {{ 'NAV.NAV_SERVICES' | translate }}
+                        </a>
+                            <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li> <a class="dropdown-item" routerLink="/services/ios-app-development">{{ 'NAV.NAV_IOS_APP' | translate }}</a></li>
+                                <li><a class="dropdown-item" routerLink="/services/android-app-development">{{ 'NAV.NAV_ANDROID_APP' | translate}}</a></li>
+                                <li><a class="dropdown-item" routerLink="/services/website-development">{{ 'NAV.NAV_WEBSITE_DEVELOPMENT' | translate }}</a></li>
+                                <li><a class="dropdown-item" routerLink="/services/domain-registration">{{ 'NAV.NAV_DOMAIN_REGISTRATION' | translate}}</a></li>
+                                <li><a class="dropdown-item" routerLink="/services/live-chat-application">{{ 'NAV.NAV_LIVE_CHAT_APP' | translate}}</a></li>
+                                <li><a class="dropdown-item" routerLink="/services/hosting-services">{{ 'NAV.NAV_HOSTING_SERVICES' | translate}}</a></li>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/portfolio">{{ 'NAV.NAV_PORTFOLIO' | translate}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/contact">{{ 'NAV.NAV_CONTACT' | translate}} </a>
+                        </li>
+                    </ul>
+                    <ul class="right-navbar navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="">
+                                <select class="nav-link lang" #langSelect (change)="translateLang(langSelect.value)">
+                                    <option *ngFor = "let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+                                </select>
+                                <!-- <select class="nav-link lang" #langSelect (change)="translate.use(langSelect.value)">
+                                    <option *ngFor = "let lang of translate.getLangs()" [value]="lang">{{ lang }}</option>
+                                </select> -->
+                            </a>
+                        </li>
+                        <li class="nav-item whats_app">
+                            <a class="nav-link" href="#"><img src="https://www.htf.sa/images/whatsapp_icon.png" /> 920033653</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</header>

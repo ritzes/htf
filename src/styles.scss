@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy-Regular';
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('./assets/fonts/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('./assets/fonts/Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url('./assets/fonts/Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'knock-out-regular';
+    src: url('./assets/fonts/knock-out-regular.OTF');
+}
+
+.box-align-center {
+    align-items: center;
+}

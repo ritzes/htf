@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+        <div id="carouselExampleControls" class="carousel vert slide" data-ride="carousel" data-interval="1500">
+
+            <div class="carousel-inner">
+
+                <section class="portfolio-list-slider carousel-item {{obj.class}}" *ngFor=' let obj of portfolioList; let i = index' [ngClass]="{'active':i==0}">
+                    <div class="portfolio-list-slider-box">
+                        <div class="row box-align-center">
+                            <div class="col-md-6">
+                                <img [src]="imageBasePath + obj.image" class="img-responsive">
+                            </div>
+                            <div class="col-md-6 portfolio-content">
+                                <h1>{{obj.title}}</h1>
+                                <p>{{obj.description}}</p>
+                                <div class="download-btn">
+                                    <a [routerLink]="obj.link" class="app-icon">
+                                        <i class="fa fa-play space" aria-hidden="true"></i>
+
+                                    </a>
+                                    <a [routerLink]="obj.link" class="app-icon">
+                                        <i class="fa fa-apple space"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
