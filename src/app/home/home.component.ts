@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -24,7 +24,46 @@ export class HomeComponent implements OnInit {
     })
    }
 
+   CAROUSEL_BREAKPOINT = 768;
+  carouselDisplayMode = 'multiple';
+
+  card = [
+    {
+      serviceImages : 'android-app.png'
+    },
+    {
+      serviceImages : 'iOS-app.png'
+    },
+    {
+      serviceImages : 'web_development.png'
+    },
+    {
+      serviceImages : 'hosting.png'
+    },
+    {
+      serviceImages : 'domain-register.png'
+    },
+    {
+      serviceImages : 'live_chat.png'
+    },
+    ]
+  slides: any = [[]];
+  chunk(arr, chunkSize) {
+    let R = [];
+    for (let i = 0, len = arr.length; i < len; i += chunkSize) {
+      R.push(arr.slice(i, i + chunkSize));
+    }
+    return R;
+  }
+
   ngOnInit() {
+    this.slides = this.chunk(this.card, 4);
+
+    if (window.innerWidth <= this.CAROUSEL_BREAKPOINT) {
+      this.carouselDisplayMode = 'single';
+    } else {
+      this.carouselDisplayMode = 'multiple';
+    }
     this.homeServiceBox = [
     {
       serviceImages : 'android-app.png'
@@ -188,5 +227,12 @@ export class HomeComponent implements OnInit {
       }
     ]
   }
-
+  @HostListener('window:resize')
+  onWindowResize() {
+    if (window.innerWidth <= this.CAROUSEL_BREAKPOINT) {
+      this.carouselDisplayMode = 'single';
+    } else {
+      this.carouselDisplayMode = 'multiple';
+    }
+  }
 }

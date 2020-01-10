@@ -1,32 +1,146 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gilroy-Regular';
-    overflow-x: hidden;
-}
-
-@font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('./assets/fonts/Gilroy-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Gilroy-Bold";
-    src: url('./assets/fonts/Gilroy-Bold.ttf');
-}
-
-@font-face {
-    font-family: "Gilroy-Light";
-    src: url('./assets/fonts/Gilroy-Light.ttf');
-}
-
-@font-face {
-    font-family: 'knock-out-regular';
-    src: url('./assets/fonts/knock-out-regular.OTF');
-}
-
-.box-align-center {
-    align-items: center;
-}
+        /* You can add global styles to this file, and also import other style files */
+        
+        @font-face {
+            font-family: 'Gilroy-Regular';
+            src: url('./assets/fonts/Gilroy-Regular.ttf');
+        }
+        
+        @font-face {
+            font-family: "Gilroy-Bold";
+            src: url('./assets/fonts/Gilroy-Bold.ttf');
+        }
+        
+        @font-face {
+            font-family: "Gilroy-Light";
+            src: url('./assets/fonts/Gilroy-Light.ttf');
+        }
+        
+        @font-face {
+            font-family: 'knock-out-regular';
+            src: url('./assets/fonts/knock-out-regular.OTF');
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gilroy-Regular';
+            overflow-x: hidden;
+        }
+        
+        a {
+            outline: none !important;
+        }
+        
+        .box-align-center {
+            align-items: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .website-specification {
+                height: auto !important;
+                margin-top: 0px !important;
+                padding-top: 162px !important;
+            }
+            .recent_work.client-review-bg {
+                height: auto !important;
+            }
+            .portfolio-list-slider h1 {
+                font-size: 2rem !important;
+                line-height: 3rem !important;
+            }
+            .our_services {
+                margin-bottom: 100px;
+                margin-top: 0px;
+            }
+            .hover15 img {
+                width: 100% !important;
+            }
+            .left-new-anim {
+                display: none;
+            }
+            .left-header-bg {
+                display: none;
+            }
+            .trangle-three {
+                display: none;
+            }
+            .trangle-one {
+                display: none;
+            }
+            .who_are {
+                padding: 19px 10px !important;
+            }
+            .counter_st {
+                width: 100% !important;
+                padding: 15px !important;
+            }
+            .info img {
+                width: 100%;
+            }
+            .row.we-are-best {
+                margin: 15px 0px !important;
+            }
+            .we-are-best img {
+                display: none;
+            }
+            .row.we-are-best h3 {
+                font-size: 17px !important;
+            }
+            .col-md-6.portfolio-content {
+                padding: 38px;
+            }
+            .carousel-control-next,
+            .carousel-control-prev {
+                top: 33% !important;
+            }
+            .contact-about img {
+                width: 100% !important;
+            }
+            .who_are.inner-about {
+                margin: 0 !important;
+            }
+            .contact-info {
+                background: #5a1d91 !important;
+                height: auto !important;
+            }
+            .info-box {
+                padding: 1px !important;
+            }
+            .web-launcher.img-responsive {
+                display: none;
+            }
+            .website-specification {
+                height: auto !important;
+                margin-top: 0px !important;
+                padding-top: 162px !important;
+            }
+            .img-responsive.domain-down {
+                display: none;
+            }
+            .counter_style {
+                width: 100% !important;
+            }
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Roboto, "Helvetica Neue", sans-serif;
+        }
+        
+        .mdb-card-img img.img-fluid {
+            width: auto !important;
+        }
+        
+        img.img-fluid {
+            width: auto !important;
+            max-height: 230px !important;
+        }
+        
+        .carousel.carousel-multi-item.multi-animation.carousel-multi-item {
+            padding-top: 50px;
+        }

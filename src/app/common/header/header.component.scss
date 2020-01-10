@@ -293,3 +293,9 @@
     select {
         outline: none !important;
     }
+    
+    @media screen and (max-width: 768px) {
+        .navbar-collapse {
+            background: #6e1992;
+        }
+    }

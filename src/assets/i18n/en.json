@@ -128,7 +128,10 @@
         "WEB_DEVELOPMENT_3_BOX_HEADING": "E-commerce Web Development",
         "WEB_DEVELOPMENT_3_BOX_DESCRIPTION": "Register a keyword rich domain name and get an instant boost to your SEO efforts from the get-go!",
         "WEB_DEVELOPMENT_4_BOX_HEADING": "Web App Or CRM Development",
-        "WEB_DEVELOPMENT_4_BOX_DESCRIPTION": "Prevent others from hijacking or squatting on your online identity. Secure it today even if you’re looking to build a website later!"
+        "WEB_DEVELOPMENT_4_BOX_DESCRIPTION": "Prevent others from hijacking or squatting on your online identity. Secure it today even if you’re looking to build a website later!",
+
+        "PRICE": "PRICE",
+        "RETURN_POLICY_DESCRIPTION": "The future company here guarantees that the full amount will be recovered within 15 days in case the customer is not satisfied with the following services (shared hosting or VPS, design services unless implementation begins) with a 15% discount as an administrative fee. The amount is returned via the same method of payment from our available payment channels."
 
 
     },

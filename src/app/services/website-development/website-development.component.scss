@@ -326,3 +326,14 @@
     top: 277px;
     right: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .website-specification {
+        height: auto !important;
+        margin-top: 0px !important;
+        padding-top: 162px !important;
+    }
+    .website-features {
+        display: none;
+    }
+}

@@ -82,3 +82,9 @@ footer li a {
 .copy_ryt a {
     color: #e5e5e5;
 }
+
+@media screen and (max-width: 768px) {
+    .get-app-bottom-avatar {
+        display: none;
+    }
+}

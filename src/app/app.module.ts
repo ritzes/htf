@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
@@ -26,7 +26,9 @@ import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http);
 }
@@ -55,11 +57,14 @@ export function HttpLoaderFactory(http: HttpClient){
   ],
   imports: [
     BrowserModule,
+    MatSliderModule,
     FormsModule,
     AlertModule,
     NgxNavbarModule,
     AppRoutingModule,
     AnimateOnScrollModule,
+    MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader :{
@@ -67,13 +72,16 @@ export function HttpLoaderFactory(http: HttpClient){
         useFactory :HttpLoaderFactory,
         deps : [HttpClient]
       }
-    })
+    }),
+    BrowserAnimationsModule
    
 
 
 
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
